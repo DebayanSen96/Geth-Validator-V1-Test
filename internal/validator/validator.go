@@ -94,9 +94,9 @@ func NewValidator(cfg *config.Config) (*Validator, error) {
 	address := crypto.PubkeyToAddress(*publicKeyECDSA)
 
 	// Create contract instance
-	contractAddress := common.HexToAddress(cfg.DXPContractAddress)
-	// Note: In a real implementation, we would bind to the actual contract here
-	// For this example, we'll use a mock contract implementation
+	// Note: In a real implementation, we would bind to the actual contract here using the contract address
+	// For this example, we'll use a mock contract implementation without binding to the actual address
+	// contractAddress := common.HexToAddress(cfg.DXPContractAddress)
 	contract := NewMockDXPContract()
 
 	// Generate a unique node ID
