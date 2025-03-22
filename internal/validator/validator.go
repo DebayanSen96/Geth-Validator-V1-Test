@@ -13,6 +13,7 @@ import (
 	"github.com/dexponent/geth-validator/internal/compute"
 	"github.com/dexponent/geth-validator/internal/config"
 	"github.com/dexponent/geth-validator/internal/consensus"
+	"github.com/dexponent/geth-validator/internal/contracts"
 	"github.com/dexponent/geth-validator/internal/proof"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"
@@ -94,10 +95,11 @@ func NewValidator(cfg *config.Config) (*Validator, error) {
 	address := crypto.PubkeyToAddress(*publicKeyECDSA)
 
 	// Create contract instance
-	// Note: In a real implementation, we would bind to the actual contract here using the contract address
-	// For this example, we'll use a mock contract implementation without binding to the actual address
-	// contractAddress := common.HexToAddress(cfg.DXPContractAddress)
-	contract := NewMockDXPContract()
+	contractAddress := common.HexToAddress(cfg.DXPContractAddress)
+	contract, err := contracts.NewDexponentContractWrapper(contractAddress, client)
+	if err != nil {
+		return nil, fmt.Errorf("failed to create contract instance: %v", err)
+	}
 
 	// Generate a unique node ID
 	nodeID := hexutil.Encode(crypto.Keccak256([]byte(address.Hex() + time.Now().String())))[2:10]
