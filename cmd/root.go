@@ -51,4 +51,5 @@ func init() {
 	RootCmd.AddCommand(statusCmd)
 	RootCmd.AddCommand(rewardsCmd)
 	RootCmd.AddCommand(claimCmd)
+	// Note: Contract commands are added in the contract.go file
 }

@@ -117,21 +117,27 @@ The repository includes a tool for testing interaction with the Dexponent Protoc
 ### Building the Test Tool
 
 ```bash
-# Build the contract test tool
-go build -o bin/contract-test ./cmd/test/contract.go
+# Build the validator tool
+go build -o dxp-validator
 ```
 
-### Using the Test Tool
+### Using the Contract Commands
 
 ```bash
 # Check if your account is registered as a verifier
-./bin/contract-test check
+./dxp-validator contract check
+
+# Check your DXP token balance and approval status
+./dxp-validator contract check-dxp
+
+# Approve DXP tokens for the contract (required before registration)
+./dxp-validator contract approve --amount 100
 
 # Register as a verifier (requires DXP tokens for staking)
-./bin/contract-test register
+./dxp-validator contract register
 
 # Submit proof for a farm (requires being registered first)
-./bin/contract-test submit --farm-id 1 --score 100
+./dxp-validator contract submit --farm-id 1 --score 100
 ```
 
 ### Getting Sepolia ETH and DXP Tokens
