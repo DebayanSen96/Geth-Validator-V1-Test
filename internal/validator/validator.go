@@ -148,16 +148,49 @@ func (v *Validator) IsRegistered() (bool, error) {
 
 // RegisterValidator registers the validator with the DXP contract
 func (v *Validator) RegisterValidator() (string, error) {
+	// Log start of registration process
+	log.Printf("Starting validator registration process with DXP contract: %s", v.config.DXPContractAddress)
+	log.Printf("Validator address: %s", v.address.Hex())
+	
+	// Check connection to blockchain
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
+	
+	blockNumber, err := v.client.BlockNumber(ctx)
+	if err != nil {
+		log.Printf("Failed to connect to blockchain: %v", err)
+		return "", fmt.Errorf("failed to connect to blockchain: %v", err)
+	}
+	log.Printf("Connected to blockchain, current block: %d", blockNumber)
+	
+	// Check wallet balance
+	balance, err := v.client.BalanceAt(ctx, v.address, nil)
+	if err != nil {
+		log.Printf("Failed to get wallet balance: %v", err)
+		return "", fmt.Errorf("failed to get wallet balance: %v", err)
+	}
+	
+	// Convert wei to ether for logging
+	ether := new(big.Float).Quo(new(big.Float).SetInt(balance), big.NewFloat(1e18))
+	log.Printf("Wallet balance: %s ETH", ether.Text('f', 6))
+	
+	// Check if balance is sufficient for gas
+	if balance.Cmp(big.NewInt(1000000000000000)) < 0 { // 0.001 ETH minimum
+		log.Printf("WARNING: Wallet balance may be too low for transaction fees")
+	}
+
 	// Create transaction options
 	chainID := big.NewInt(v.config.ChainID)
 	auth, err := bind.NewKeyedTransactorWithChainID(v.privateKey, chainID)
 	if err != nil {
+		log.Printf("Failed to create transaction options: %v", err)
 		return "", fmt.Errorf("failed to create transaction options: %v", err)
 	}
 
 	// Set gas price and limit
 	gasPrice, err := v.client.SuggestGasPrice(context.Background())
 	if err != nil {
+		log.Printf("Failed to suggest gas price: %v", err)
 		return "", fmt.Errorf("failed to suggest gas price: %v", err)
 	}
 
@@ -168,15 +201,43 @@ func (v *Validator) RegisterValidator() (string, error) {
 
 	auth.GasPrice = adjustedGasPriceInt
 	auth.GasLimit = v.config.GasLimit
+	
+	log.Printf("Preparing transaction with gas price: %s wei, gas limit: %d", adjustedGasPriceInt.String(), v.config.GasLimit)
 
 	// Register validator
+	log.Printf("Sending registerVerifier transaction to blockchain...")
 	tx, err := v.contract.RegisterValidator(auth)
 	if err != nil {
+		log.Printf("Failed to register validator: %v", err)
 		return "", fmt.Errorf("failed to register validator: %v", err)
 	}
 
-	v.registered = true
-	return tx.Hash().Hex(), nil
+	// Get transaction hash
+	txHash := tx.Hash().Hex()
+	log.Printf("Transaction sent successfully! Hash: %s", txHash)
+	
+	// Wait for transaction receipt with timeout
+	log.Printf("Waiting for transaction confirmation...")
+	ctxReceipt, cancelReceipt := context.WithTimeout(context.Background(), 60*time.Second)
+	defer cancelReceipt()
+	
+	receipt, err := bind.WaitMined(ctxReceipt, v.client, tx)
+	if err != nil {
+		log.Printf("Failed to get transaction receipt: %v", err)
+		log.Printf("Transaction may still be pending or dropped. Check the transaction hash: %s", txHash)
+		return txHash, nil // Return hash even if we couldn't get receipt
+	}
+	
+	// Check transaction status
+	if receipt.Status == types.ReceiptStatusSuccessful {
+		log.Printf("Transaction confirmed successfully in block %d", receipt.BlockNumber)
+		v.registered = true
+	} else {
+		log.Printf("Transaction failed on-chain. Check block explorer for details: %s", txHash)
+		return txHash, fmt.Errorf("transaction failed on-chain")
+	}
+
+	return txHash, nil
 }
 
 // Start starts the validator node
