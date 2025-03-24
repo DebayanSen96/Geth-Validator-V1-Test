@@ -1,0 +1,10 @@
+{
+  "ListenAddresses": [
+    "/ip4/0.0.0.0/tcp/9001",
+    "/ip4/0.0.0.0/udp/9001/quic-v1"
+  ],
+  "BootstrapPeers": [
+    "/ip4/127.0.0.1/tcp/9000/p2p/12D3KooWPgnE4MoNGFaDVnzwk1vE68wxymzVwoKDUkpE7ACtCNrk"
+  ],
+  "PrivateKeyFile": ""
+}
