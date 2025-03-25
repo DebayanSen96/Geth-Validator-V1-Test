@@ -1,0 +1,472 @@
+2025/03/25 14:58:27 Farm score callback registered for validator 60fc3a8d
+Running in TEST MODE - bypassing blockchain registration check
+Starting validator node...
+2025/03/25 14:58:27 Starting p2p gossip protocol for validator 60fc3a8d
+2025/03/25 14:58:27 P2P Gossip engine started on 127.0.0.1:30301 with node ID 60fc3a8d
+2025/03/25 14:58:27 Discovering peer validators from config
+2025/03/25 14:58:27 Discovering peer validators from 1 known addresses
+2025/03/25 14:58:27 Adding peer validator peer-127.0.0.1-30302 at address 127.0.0.1:30302
+2025/03/25 14:58:27 Added peer peer-127.0.0.1-30302 at 127.0.0.1:30302
+Validator node started successfully!
+2025/03/25 14:58:27 Fetching farm data from protocol master contract
+2025/03/25 14:58:27 Fetching active farm IDs from protocol master contract
+2025/03/25 14:58:27 Processing data for 3 active farms
+2025/03/25 14:58:27 Fetching returns data for farm 1
+2025/03/25 14:58:27 Fetching returns data for farm 1 from protocol master contract
+2025/03/25 14:58:27 Calculated farm score for farm 1: 35.367398
+2025/03/25 14:58:27 Submitting farm score for farm 1: 35.367398
+2025/03/25 14:58:27 Consensus reached for farm 1 with score: 35.367398
+2025/03/25 14:58:29 Submitted verification result, tx: 0xacaa0fe67888647df77b9f30853af3fc58601f5db867be397e21222972409447
+2025/03/25 14:58:29 Successfully submitted farm score to smart contract for farm 1
+2025/03/25 14:58:29 Broadcasting farm score 35.367398 for farm 1 to peers
+2025/03/25 14:58:29 Broadcasting message of type farm_score from 60fc3a8d
+2025/03/25 14:58:29 Received farm score 35.367398 from peer 60fc3a8d for request 1
+2025/03/25 14:58:29 Forwarding farm score 35.367398 for farm 1 to validator
+2025/03/25 14:58:29 Submitting farm score for farm 1: 35.367398
+2025/03/25 14:58:29 Consensus reached for farm 1 with score: 35.367398
+2025/03/25 14:58:29 Failed to connect to peer peer-127.0.0.1-30302 at 127.0.0.1:30302: dial tcp 127.0.0.1:30302: connect: connection refused
+2025/03/25 14:58:30 Submitted verification result, tx: 0xacaa0fe67888647df77b9f30853af3fc58601f5db867be397e21222972409447
+2025/03/25 14:58:30 Successfully submitted farm score to smart contract for farm 1
+2025/03/25 14:58:30 Fetching returns data for farm 2
+2025/03/25 14:58:30 Fetching returns data for farm 2 from protocol master contract
+2025/03/25 14:58:30 Calculated farm score for farm 2: 35.367398
+2025/03/25 14:58:30 Submitting farm score for farm 2: 35.367398
+2025/03/25 14:58:30 Consensus reached for farm 2 with score: 35.367398
+2025/03/25 14:58:31 Submitted verification result, tx: 0xaff0051d2834956d22b16f271bf05611cf8fd7fef6bd55bb6e61fe7e34cf5b22
+2025/03/25 14:58:31 Successfully submitted farm score to smart contract for farm 2
+2025/03/25 14:58:31 Broadcasting farm score 35.367398 for farm 2 to peers
+2025/03/25 14:58:31 Broadcasting message of type farm_score from 60fc3a8d
+2025/03/25 14:58:31 Received farm score 35.367398 from peer 60fc3a8d for request 2
+2025/03/25 14:58:31 Forwarding farm score 35.367398 for farm 2 to validator
+2025/03/25 14:58:31 Submitting farm score for farm 2: 35.367398
+2025/03/25 14:58:31 Consensus reached for farm 2 with score: 35.367398
+2025/03/25 14:58:31 Failed to connect to peer peer-127.0.0.1-30302 at 127.0.0.1:30302: dial tcp 127.0.0.1:30302: connect: connection refused
+2025/03/25 14:58:32 Submitted verification result, tx: 0xaff0051d2834956d22b16f271bf05611cf8fd7fef6bd55bb6e61fe7e34cf5b22
+2025/03/25 14:58:32 Successfully submitted farm score to smart contract for farm 2
+2025/03/25 14:58:32 Fetching returns data for farm 3
+2025/03/25 14:58:32 Fetching returns data for farm 3 from protocol master contract
+2025/03/25 14:58:32 Calculated farm score for farm 3: 35.367398
+2025/03/25 14:58:32 Submitting farm score for farm 3: 35.367398
+2025/03/25 14:58:32 Consensus reached for farm 3 with score: 35.367398
+2025/03/25 14:58:32 Consensus reached for request 1 with score 35.367398
+2025/03/25 14:58:32 Would submit consensus result to protocol master contract: requestID=1, score=35.367398
+2025/03/25 14:58:32 Successfully submitted consensus result for request 1
+2025/03/25 14:58:32 Consensus reached for request 2 with score 35.367398
+2025/03/25 14:58:32 Would submit consensus result to protocol master contract: requestID=2, score=35.367398
+2025/03/25 14:58:32 Successfully submitted consensus result for request 2
+2025/03/25 14:58:33 Submitted verification result, tx: 0x3a09bafdbcf99e46e5ddf24c715406306b3f0f78f41142572fffd4841f097928
+2025/03/25 14:58:33 Successfully submitted farm score to smart contract for farm 3
+2025/03/25 14:58:33 Broadcasting farm score 35.367398 for farm 3 to peers
+2025/03/25 14:58:33 Broadcasting message of type farm_score from 60fc3a8d
+2025/03/25 14:58:33 Received farm score 35.367398 from peer 60fc3a8d for request 3
+2025/03/25 14:58:33 Forwarding farm score 35.367398 for farm 3 to validator
+2025/03/25 14:58:33 Submitting farm score for farm 3: 35.367398
+2025/03/25 14:58:33 Consensus reached for farm 3 with score: 35.367398
+2025/03/25 14:58:33 Failed to connect to peer peer-127.0.0.1-30302 at 127.0.0.1:30302: dial tcp 127.0.0.1:30302: connect: connection refused
+2025/03/25 14:58:34 Submitted verification result, tx: 0x3a09bafdbcf99e46e5ddf24c715406306b3f0f78f41142572fffd4841f097928
+2025/03/25 14:58:34 Successfully submitted farm score to smart contract for farm 3
+2025/03/25 14:58:37 Consensus reached for request 3 with score 35.367398
+2025/03/25 14:58:37 Would submit consensus result to protocol master contract: requestID=3, score=35.367398
+2025/03/25 14:58:37 Successfully submitted consensus result for request 3
+2025/03/25 14:58:37 Failed to connect to peer peer-127.0.0.1-30302 at 127.0.0.1:30302: dial tcp 127.0.0.1:30302: connect: connection refused
+2025/03/25 14:58:47 Failed to connect to peer peer-127.0.0.1-30302 at 127.0.0.1:30302: dial tcp 127.0.0.1:30302: connect: connection refused
+2025/03/25 14:58:57 Processed farm data for request farm-data-1742894937, calculated score: 35.367398
+2025/03/25 14:58:57 Failed to connect to peer peer-127.0.0.1-30302 at 127.0.0.1:30302: dial tcp 127.0.0.1:30302: connect: connection refused
+2025/03/25 14:58:57 Failed to connect to peer peer-127.0.0.1-30302 at 127.0.0.1:30302: dial tcp 127.0.0.1:30302: connect: connection refused
+2025/03/25 14:58:57 Failed to connect to peer peer-127.0.0.1-30302 at 127.0.0.1:30302: dial tcp 127.0.0.1:30302: connect: connection refused
+2025/03/25 14:58:57 Failed to connect to peer peer-127.0.0.1-30302 at 127.0.0.1:30302: dial tcp 127.0.0.1:30302: connect: connection refused
+2025/03/25 14:59:02 Consensus reached for request farm-data-1742894937 with score 35.367398
+2025/03/25 14:59:02 Would submit consensus result to protocol master contract: requestID=farm-data-1742894937, score=35.367398
+2025/03/25 14:59:02 Successfully submitted consensus result for request farm-data-1742894937
+2025/03/25 14:59:07 Failed to connect to peer peer-127.0.0.1-30302 at 127.0.0.1:30302: dial tcp 127.0.0.1:30302: connect: connection refused
+2025/03/25 14:59:12 Received farm score 35.367398 from peer 62c7f53a for request 1
+2025/03/25 14:59:12 Forwarding farm score 35.367398 for farm 1 to validator
+2025/03/25 14:59:12 Submitting farm score for farm 1: 35.367398
+2025/03/25 14:59:12 Consensus reached for farm 1 with score: 35.367398
+2025/03/25 14:59:13 Submitted verification result, tx: 0x01ed82a62ae57710154147ba523b4233ebf18882dc4fe0af51695c8a26512e93
+2025/03/25 14:59:13 Successfully submitted farm score to smart contract for farm 1
+2025/03/25 14:59:13 Received farm score 35.367398 from peer 62c7f53a for request 2
+2025/03/25 14:59:13 Forwarding farm score 35.367398 for farm 2 to validator
+2025/03/25 14:59:13 Submitting farm score for farm 2: 35.367398
+2025/03/25 14:59:13 Consensus reached for farm 2 with score: 35.367398
+2025/03/25 14:59:14 Submitted verification result, tx: 0x72cc0341292afe2484cc60957433d6dc57058441d96d6d68e76b7dff6b2ef5af
+2025/03/25 14:59:14 Successfully submitted farm score to smart contract for farm 2
+2025/03/25 14:59:15 Received farm score 35.367398 from peer 62c7f53a for request 3
+2025/03/25 14:59:15 Forwarding farm score 35.367398 for farm 3 to validator
+2025/03/25 14:59:15 Submitting farm score for farm 3: 35.367398
+2025/03/25 14:59:15 Consensus reached for farm 3 with score: 35.367398
+2025/03/25 14:59:15 Submitted verification result, tx: 0x5f4ef4f098c81b4a255fa6c73742e4cf2c15bcab288e88e4e7840b47ac0dde4d
+2025/03/25 14:59:15 Successfully submitted farm score to smart contract for farm 3
+2025/03/25 14:59:17 Consensus reached for request 2 with score 35.367398
+2025/03/25 14:59:17 Would submit consensus result to protocol master contract: requestID=2, score=35.367398
+2025/03/25 14:59:17 Successfully submitted consensus result for request 2
+2025/03/25 14:59:17 Consensus reached for request 3 with score 35.367398
+2025/03/25 14:59:17 Would submit consensus result to protocol master contract: requestID=3, score=35.367398
+2025/03/25 14:59:17 Successfully submitted consensus result for request 3
+2025/03/25 14:59:17 Consensus reached for request 1 with score 35.367398
+2025/03/25 14:59:17 Would submit consensus result to protocol master contract: requestID=1, score=35.367398
+2025/03/25 14:59:17 Successfully submitted consensus result for request 1
+2025/03/25 14:59:17 Discovered new peer 60fc3a8d at 127.0.0.1:30301
+2025/03/25 14:59:21 Discovered new peer 62c7f53a at 127.0.0.1:30302
+2025/03/25 14:59:27 Processed farm data for request farm-data-1742894967, calculated score: 35.367398
+2025/03/25 14:59:27 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742894967
+2025/03/25 14:59:27 Forwarding farm score 35.367398 for farm farm-data-1742894967 to validator
+2025/03/25 14:59:27 Submitting farm score for farm farm-data-1742894967: 35.367398
+2025/03/25 14:59:27 Consensus reached for farm farm-data-1742894967 with score: 35.367398
+2025/03/25 14:59:27 Received farm data from peer 60fc3a8d for request farm-data-1742894967
+2025/03/25 14:59:27 Calculated farm score 35.367398 for request farm-data-1742894967 based on peer data
+2025/03/25 14:59:27 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742894967
+2025/03/25 14:59:27 Forwarding farm score 35.367398 for farm farm-data-1742894967 to validator
+2025/03/25 14:59:27 Submitting farm score for farm farm-data-1742894967: 35.367398
+2025/03/25 14:59:27 Consensus reached for farm farm-data-1742894967 with score: 35.367398
+2025/03/25 14:59:27 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742894967
+2025/03/25 14:59:27 Forwarding farm score 35.367398 for farm farm-data-1742894967 to validator
+2025/03/25 14:59:27 Submitting farm score for farm farm-data-1742894967: 35.367398
+2025/03/25 14:59:27 Consensus reached for farm farm-data-1742894967 with score: 35.367398
+2025/03/25 14:59:27 Received farm data from peer 60fc3a8d for request farm-data-1742894967
+2025/03/25 14:59:27 Received farm data from peer 60fc3a8d for request farm-data-1742894967
+2025/03/25 14:59:27 Calculated farm score 35.367398 for request farm-data-1742894967 based on peer data
+2025/03/25 14:59:27 Calculated farm score 35.367398 for request farm-data-1742894967 based on peer data
+2025/03/25 14:59:28 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742894967
+2025/03/25 14:59:28 Forwarding farm score 35.367398 for farm farm-data-1742894967 to validator
+2025/03/25 14:59:28 Submitting farm score for farm farm-data-1742894967: 35.367398
+2025/03/25 14:59:28 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742894967
+2025/03/25 14:59:28 Forwarding farm score 35.367398 for farm farm-data-1742894967 to validator
+2025/03/25 14:59:28 Submitting farm score for farm farm-data-1742894967: 35.367398
+2025/03/25 14:59:28 Consensus reached for farm farm-data-1742894967 with score: 35.367398
+2025/03/25 14:59:28 Consensus reached for farm farm-data-1742894967 with score: 35.367398
+2025/03/25 14:59:28 Submitted verification result, tx: 0x917fa61e5cc73d550d9650256b9fcc04e65792437d04480f1d1d4d10b83bd3ce
+2025/03/25 14:59:28 Successfully submitted farm score to smart contract for farm farm-data-1742894967
+2025/03/25 14:59:28 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742894967
+2025/03/25 14:59:28 Forwarding farm score 35.367398 for farm farm-data-1742894967 to validator
+2025/03/25 14:59:28 Submitting farm score for farm farm-data-1742894967: 35.367398
+2025/03/25 14:59:28 Consensus reached for farm farm-data-1742894967 with score: 35.367398
+2025/03/25 14:59:28 Submitted verification result, tx: 0x917fa61e5cc73d550d9650256b9fcc04e65792437d04480f1d1d4d10b83bd3ce
+2025/03/25 14:59:28 Successfully submitted farm score to smart contract for farm farm-data-1742894967
+2025/03/25 14:59:28 Submitted verification result, tx: 0x917fa61e5cc73d550d9650256b9fcc04e65792437d04480f1d1d4d10b83bd3ce
+2025/03/25 14:59:28 Successfully submitted farm score to smart contract for farm farm-data-1742894967
+2025/03/25 14:59:28 Submitted verification result, tx: 0x917fa61e5cc73d550d9650256b9fcc04e65792437d04480f1d1d4d10b83bd3ce
+2025/03/25 14:59:28 Successfully submitted farm score to smart contract for farm farm-data-1742894967
+2025/03/25 14:59:28 Submitted verification result, tx: 0x917fa61e5cc73d550d9650256b9fcc04e65792437d04480f1d1d4d10b83bd3ce
+2025/03/25 14:59:28 Successfully submitted farm score to smart contract for farm farm-data-1742894967
+2025/03/25 14:59:28 Submitted verification result, tx: 0x917fa61e5cc73d550d9650256b9fcc04e65792437d04480f1d1d4d10b83bd3ce
+2025/03/25 14:59:28 Successfully submitted farm score to smart contract for farm farm-data-1742894967
+2025/03/25 14:59:32 Consensus reached for request farm-data-1742894967 with score 35.367398
+2025/03/25 14:59:32 Would submit consensus result to protocol master contract: requestID=farm-data-1742894967, score=35.367398
+2025/03/25 14:59:32 Successfully submitted consensus result for request farm-data-1742894967
+2025/03/25 14:59:41 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742894981
+2025/03/25 14:59:41 Forwarding farm score 35.367398 for farm farm-data-1742894981 to validator
+2025/03/25 14:59:41 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742894981
+2025/03/25 14:59:41 Received farm data from peer 62c7f53a for request farm-data-1742894981
+2025/03/25 14:59:41 Received farm data from peer 62c7f53a for request farm-data-1742894981
+2025/03/25 14:59:41 Submitting farm score for farm farm-data-1742894981: 35.367398
+2025/03/25 14:59:41 Consensus reached for farm farm-data-1742894981 with score: 35.367398
+2025/03/25 14:59:41 Calculated farm score 35.367398 for request farm-data-1742894981 based on peer data
+2025/03/25 14:59:41 Calculated farm score 35.367398 for request farm-data-1742894981 based on peer data
+2025/03/25 14:59:41 Forwarding farm score 35.367398 for farm farm-data-1742894981 to validator
+2025/03/25 14:59:41 Submitting farm score for farm farm-data-1742894981: 35.367398
+2025/03/25 14:59:41 Consensus reached for farm farm-data-1742894981 with score: 35.367398
+2025/03/25 14:59:41 Received farm data from peer 62c7f53a for request farm-data-1742894981
+2025/03/25 14:59:41 Calculated farm score 35.367398 for request farm-data-1742894981 based on peer data
+2025/03/25 14:59:41 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742894981
+2025/03/25 14:59:41 Forwarding farm score 35.367398 for farm farm-data-1742894981 to validator
+2025/03/25 14:59:41 Submitting farm score for farm farm-data-1742894981: 35.367398
+2025/03/25 14:59:41 Consensus reached for farm farm-data-1742894981 with score: 35.367398
+2025/03/25 14:59:41 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742894981
+2025/03/25 14:59:41 Forwarding farm score 35.367398 for farm farm-data-1742894981 to validator
+2025/03/25 14:59:41 Submitting farm score for farm farm-data-1742894981: 35.367398
+2025/03/25 14:59:41 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742894981
+2025/03/25 14:59:41 Forwarding farm score 35.367398 for farm farm-data-1742894981 to validator
+2025/03/25 14:59:41 Submitting farm score for farm farm-data-1742894981: 35.367398
+2025/03/25 14:59:41 Consensus reached for farm farm-data-1742894981 with score: 35.367398
+2025/03/25 14:59:41 Consensus reached for farm farm-data-1742894981 with score: 35.367398
+2025/03/25 14:59:41 Submitted verification result, tx: 0xe873f72a383d336455e66f8f945553c819ca8a87406cb061e9ea000793aaf74a
+2025/03/25 14:59:41 Successfully submitted farm score to smart contract for farm farm-data-1742894981
+2025/03/25 14:59:41 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742894981
+2025/03/25 14:59:41 Forwarding farm score 35.367398 for farm farm-data-1742894981 to validator
+2025/03/25 14:59:41 Submitting farm score for farm farm-data-1742894981: 35.367398
+2025/03/25 14:59:41 Consensus reached for farm farm-data-1742894981 with score: 35.367398
+2025/03/25 14:59:41 Submitted verification result, tx: 0xe873f72a383d336455e66f8f945553c819ca8a87406cb061e9ea000793aaf74a
+2025/03/25 14:59:41 Successfully submitted farm score to smart contract for farm farm-data-1742894981
+2025/03/25 14:59:41 Submitted verification result, tx: 0xe873f72a383d336455e66f8f945553c819ca8a87406cb061e9ea000793aaf74a
+2025/03/25 14:59:41 Successfully submitted farm score to smart contract for farm farm-data-1742894981
+2025/03/25 14:59:42 Consensus reached for request farm-data-1742894981 with score 35.367398
+2025/03/25 14:59:42 Would submit consensus result to protocol master contract: requestID=farm-data-1742894981, score=35.367398
+2025/03/25 14:59:42 Successfully submitted consensus result for request farm-data-1742894981
+2025/03/25 14:59:42 Submitted verification result, tx: 0xe873f72a383d336455e66f8f945553c819ca8a87406cb061e9ea000793aaf74a
+2025/03/25 14:59:42 Successfully submitted farm score to smart contract for farm farm-data-1742894981
+2025/03/25 14:59:42 Submitted verification result, tx: 0xe873f72a383d336455e66f8f945553c819ca8a87406cb061e9ea000793aaf74a
+2025/03/25 14:59:42 Successfully submitted farm score to smart contract for farm farm-data-1742894981
+2025/03/25 14:59:42 Submitted verification result, tx: 0xe873f72a383d336455e66f8f945553c819ca8a87406cb061e9ea000793aaf74a
+2025/03/25 14:59:42 Successfully submitted farm score to smart contract for farm farm-data-1742894981
+2025/03/25 14:59:57 Processed farm data for request farm-data-1742894997, calculated score: 35.367398
+2025/03/25 14:59:57 Received farm data from peer 60fc3a8d for request farm-data-1742894997
+2025/03/25 14:59:57 Calculated farm score 35.367398 for request farm-data-1742894997 based on peer data
+2025/03/25 14:59:57 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742894997
+2025/03/25 14:59:57 Forwarding farm score 35.367398 for farm farm-data-1742894997 to validator
+2025/03/25 14:59:57 Submitting farm score for farm farm-data-1742894997: 35.367398
+2025/03/25 14:59:57 Consensus reached for farm farm-data-1742894997 with score: 35.367398
+2025/03/25 14:59:57 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742894997
+2025/03/25 14:59:57 Forwarding farm score 35.367398 for farm farm-data-1742894997 to validator
+2025/03/25 14:59:57 Submitting farm score for farm farm-data-1742894997: 35.367398
+2025/03/25 14:59:57 Consensus reached for farm farm-data-1742894997 with score: 35.367398
+2025/03/25 14:59:57 Received farm data from peer 60fc3a8d for request farm-data-1742894997
+2025/03/25 14:59:57 Calculated farm score 35.367398 for request farm-data-1742894997 based on peer data
+2025/03/25 14:59:57 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742894997
+2025/03/25 14:59:57 Forwarding farm score 35.367398 for farm farm-data-1742894997 to validator
+2025/03/25 14:59:57 Submitting farm score for farm farm-data-1742894997: 35.367398
+2025/03/25 14:59:57 Consensus reached for farm farm-data-1742894997 with score: 35.367398
+2025/03/25 14:59:57 Received farm data from peer 60fc3a8d for request farm-data-1742894997
+2025/03/25 14:59:57 Calculated farm score 35.367398 for request farm-data-1742894997 based on peer data
+2025/03/25 14:59:57 Found verification request: 7977290
+2025/03/25 14:59:58 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742894997
+2025/03/25 14:59:58 Forwarding farm score 35.367398 for farm farm-data-1742894997 to validator
+2025/03/25 14:59:58 Submitting farm score for farm farm-data-1742894997: 35.367398
+2025/03/25 14:59:58 Consensus reached for farm farm-data-1742894997 with score: 35.367398
+2025/03/25 14:59:58 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742894997
+2025/03/25 14:59:58 Forwarding farm score 35.367398 for farm farm-data-1742894997 to validator
+2025/03/25 14:59:58 Submitting farm score for farm farm-data-1742894997: 35.367398
+2025/03/25 14:59:58 Consensus reached for farm farm-data-1742894997 with score: 35.367398
+2025/03/25 14:59:58 Submitted verification result, tx: 0x2933df75cfadd719bd52eed4bc47e70ffd391ea313e1ba4d381a0e9c81bb8630
+2025/03/25 14:59:58 Successfully submitted farm score to smart contract for farm farm-data-1742894997
+2025/03/25 14:59:58 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742894997
+2025/03/25 14:59:58 Forwarding farm score 35.367398 for farm farm-data-1742894997 to validator
+2025/03/25 14:59:58 Submitting farm score for farm farm-data-1742894997: 35.367398
+2025/03/25 14:59:58 Consensus reached for farm farm-data-1742894997 with score: 35.367398
+2025/03/25 14:59:58 Submitted verification result, tx: 0x2933df75cfadd719bd52eed4bc47e70ffd391ea313e1ba4d381a0e9c81bb8630
+2025/03/25 14:59:58 Successfully submitted farm score to smart contract for farm farm-data-1742894997
+2025/03/25 14:59:58 Submitted verification result, tx: 0x2933df75cfadd719bd52eed4bc47e70ffd391ea313e1ba4d381a0e9c81bb8630
+2025/03/25 14:59:58 Successfully submitted farm score to smart contract for farm farm-data-1742894997
+2025/03/25 14:59:58 Submitted verification result, tx: 0x2933df75cfadd719bd52eed4bc47e70ffd391ea313e1ba4d381a0e9c81bb8630
+2025/03/25 14:59:58 Successfully submitted farm score to smart contract for farm farm-data-1742894997
+2025/03/25 14:59:58 Submitted verification result, tx: 0x2933df75cfadd719bd52eed4bc47e70ffd391ea313e1ba4d381a0e9c81bb8630
+2025/03/25 14:59:58 Successfully submitted farm score to smart contract for farm farm-data-1742894997
+2025/03/25 14:59:58 Submitted verification result, tx: 0x2933df75cfadd719bd52eed4bc47e70ffd391ea313e1ba4d381a0e9c81bb8630
+2025/03/25 14:59:58 Successfully submitted farm score to smart contract for farm farm-data-1742894997
+2025/03/25 15:00:02 Consensus reached for request farm-data-1742894997 with score 35.367398
+2025/03/25 15:00:02 Would submit consensus result to protocol master contract: requestID=farm-data-1742894997, score=35.367398
+2025/03/25 15:00:02 Successfully submitted consensus result for request farm-data-1742894997
+2025/03/25 15:00:02 Processing verification request: 7977290
+2025/03/25 15:00:04 Submitted verification result, tx: 0xe927e25be0393071a67ac0407a06b4b30e35f1c08d4b4d249cbc89641369c068
+2025/03/25 15:00:04 Successfully processed verification request: 7977290
+2025/03/25 15:00:11 Received farm data from peer 62c7f53a for request farm-data-1742895011
+2025/03/25 15:00:11 Calculated farm score 35.367398 for request farm-data-1742895011 based on peer data
+2025/03/25 15:00:11 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742895011
+2025/03/25 15:00:11 Forwarding farm score 35.367398 for farm farm-data-1742895011 to validator
+2025/03/25 15:00:11 Submitting farm score for farm farm-data-1742895011: 35.367398
+2025/03/25 15:00:11 Consensus reached for farm farm-data-1742895011 with score: 35.367398
+2025/03/25 15:00:11 Received farm data from peer 62c7f53a for request farm-data-1742895011
+2025/03/25 15:00:11 Calculated farm score 35.367398 for request farm-data-1742895011 based on peer data
+2025/03/25 15:00:11 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742895011
+2025/03/25 15:00:11 Forwarding farm score 35.367398 for farm farm-data-1742895011 to validator
+2025/03/25 15:00:11 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742895011
+2025/03/25 15:00:11 Forwarding farm score 35.367398 for farm farm-data-1742895011 to validator
+2025/03/25 15:00:11 Submitting farm score for farm farm-data-1742895011: 35.367398
+2025/03/25 15:00:11 Consensus reached for farm farm-data-1742895011 with score: 35.367398
+2025/03/25 15:00:11 Received farm data from peer 62c7f53a for request farm-data-1742895011
+2025/03/25 15:00:11 Calculated farm score 35.367398 for request farm-data-1742895011 based on peer data
+2025/03/25 15:00:11 Submitting farm score for farm farm-data-1742895011: 35.367398
+2025/03/25 15:00:11 Consensus reached for farm farm-data-1742895011 with score: 35.367398
+2025/03/25 15:00:12 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742895011
+2025/03/25 15:00:12 Forwarding farm score 35.367398 for farm farm-data-1742895011 to validator
+2025/03/25 15:00:12 Submitting farm score for farm farm-data-1742895011: 35.367398
+2025/03/25 15:00:12 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742895011
+2025/03/25 15:00:12 Forwarding farm score 35.367398 for farm farm-data-1742895011 to validator
+2025/03/25 15:00:12 Submitting farm score for farm farm-data-1742895011: 35.367398
+2025/03/25 15:00:12 Consensus reached for farm farm-data-1742895011 with score: 35.367398
+2025/03/25 15:00:12 Consensus reached for farm farm-data-1742895011 with score: 35.367398
+2025/03/25 15:00:12 Submitted verification result, tx: 0xc2ff969b66d40d4ce5147adc545c2daa8836a52ac3643ea1279c4e6e49d2c04a
+2025/03/25 15:00:12 Successfully submitted farm score to smart contract for farm farm-data-1742895011
+2025/03/25 15:00:12 Submitted verification result, tx: 0xc2ff969b66d40d4ce5147adc545c2daa8836a52ac3643ea1279c4e6e49d2c04a
+2025/03/25 15:00:12 Successfully submitted farm score to smart contract for farm farm-data-1742895011
+2025/03/25 15:00:12 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742895011
+2025/03/25 15:00:12 Forwarding farm score 35.367398 for farm farm-data-1742895011 to validator
+2025/03/25 15:00:12 Submitting farm score for farm farm-data-1742895011: 35.367398
+2025/03/25 15:00:12 Consensus reached for farm farm-data-1742895011 with score: 35.367398
+2025/03/25 15:00:12 Submitted verification result, tx: 0xc2ff969b66d40d4ce5147adc545c2daa8836a52ac3643ea1279c4e6e49d2c04a
+2025/03/25 15:00:12 Successfully submitted farm score to smart contract for farm farm-data-1742895011
+2025/03/25 15:00:12 Consensus reached for request farm-data-1742895011 with score 35.367398
+2025/03/25 15:00:12 Would submit consensus result to protocol master contract: requestID=farm-data-1742895011, score=35.367398
+2025/03/25 15:00:12 Successfully submitted consensus result for request farm-data-1742895011
+2025/03/25 15:00:12 Submitted verification result, tx: 0xc2ff969b66d40d4ce5147adc545c2daa8836a52ac3643ea1279c4e6e49d2c04a
+2025/03/25 15:00:12 Successfully submitted farm score to smart contract for farm farm-data-1742895011
+2025/03/25 15:00:12 Submitted verification result, tx: 0xc2ff969b66d40d4ce5147adc545c2daa8836a52ac3643ea1279c4e6e49d2c04a
+2025/03/25 15:00:12 Successfully submitted farm score to smart contract for farm farm-data-1742895011
+2025/03/25 15:00:12 Submitted verification result, tx: 0xc2ff969b66d40d4ce5147adc545c2daa8836a52ac3643ea1279c4e6e49d2c04a
+2025/03/25 15:00:12 Successfully submitted farm score to smart contract for farm farm-data-1742895011
+2025/03/25 15:00:27 Removed stale peer peer-127.0.0.1-30302
+2025/03/25 15:00:27 Processed farm data for request farm-data-1742895027, calculated score: 35.367398
+2025/03/25 15:00:27 Received farm data from peer 60fc3a8d for request farm-data-1742895027
+2025/03/25 15:00:27 Calculated farm score 35.367398 for request farm-data-1742895027 based on peer data
+2025/03/25 15:00:27 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742895027
+2025/03/25 15:00:27 Forwarding farm score 35.367398 for farm farm-data-1742895027 to validator
+2025/03/25 15:00:27 Submitting farm score for farm farm-data-1742895027: 35.367398
+2025/03/25 15:00:27 Consensus reached for farm farm-data-1742895027 with score: 35.367398
+2025/03/25 15:00:27 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742895027
+2025/03/25 15:00:27 Forwarding farm score 35.367398 for farm farm-data-1742895027 to validator
+2025/03/25 15:00:27 Submitting farm score for farm farm-data-1742895027: 35.367398
+2025/03/25 15:00:27 Received farm data from peer 60fc3a8d for request farm-data-1742895027
+2025/03/25 15:00:27 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742895027
+2025/03/25 15:00:27 Calculated farm score 35.367398 for request farm-data-1742895027 based on peer data
+2025/03/25 15:00:27 Forwarding farm score 35.367398 for farm farm-data-1742895027 to validator
+2025/03/25 15:00:27 Submitting farm score for farm farm-data-1742895027: 35.367398
+2025/03/25 15:00:27 Consensus reached for farm farm-data-1742895027 with score: 35.367398
+2025/03/25 15:00:27 Received farm data from peer 60fc3a8d for request farm-data-1742895027
+2025/03/25 15:00:27 Calculated farm score 35.367398 for request farm-data-1742895027 based on peer data
+2025/03/25 15:00:27 Consensus reached for farm farm-data-1742895027 with score: 35.367398
+2025/03/25 15:00:28 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742895027
+2025/03/25 15:00:28 Forwarding farm score 35.367398 for farm farm-data-1742895027 to validator
+2025/03/25 15:00:28 Submitting farm score for farm farm-data-1742895027: 35.367398
+2025/03/25 15:00:28 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742895027
+2025/03/25 15:00:28 Forwarding farm score 35.367398 for farm farm-data-1742895027 to validator
+2025/03/25 15:00:28 Consensus reached for farm farm-data-1742895027 with score: 35.367398
+2025/03/25 15:00:28 Submitting farm score for farm farm-data-1742895027: 35.367398
+2025/03/25 15:00:28 Consensus reached for farm farm-data-1742895027 with score: 35.367398
+2025/03/25 15:00:28 Submitted verification result, tx: 0xa7db80382035164a3e089c88eb6692e1690cd9ff491e2da9482154c7af1fc7d1
+2025/03/25 15:00:28 Successfully submitted farm score to smart contract for farm farm-data-1742895027
+2025/03/25 15:00:28 Submitted verification result, tx: 0xa7db80382035164a3e089c88eb6692e1690cd9ff491e2da9482154c7af1fc7d1
+2025/03/25 15:00:28 Successfully submitted farm score to smart contract for farm farm-data-1742895027
+2025/03/25 15:00:28 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742895027
+2025/03/25 15:00:28 Forwarding farm score 35.367398 for farm farm-data-1742895027 to validator
+2025/03/25 15:00:28 Submitting farm score for farm farm-data-1742895027: 35.367398
+2025/03/25 15:00:28 Submitted verification result, tx: 0xa7db80382035164a3e089c88eb6692e1690cd9ff491e2da9482154c7af1fc7d1
+2025/03/25 15:00:28 Successfully submitted farm score to smart contract for farm farm-data-1742895027
+2025/03/25 15:00:28 Consensus reached for farm farm-data-1742895027 with score: 35.367398
+2025/03/25 15:00:28 Submitted verification result, tx: 0xa7db80382035164a3e089c88eb6692e1690cd9ff491e2da9482154c7af1fc7d1
+2025/03/25 15:00:28 Successfully submitted farm score to smart contract for farm farm-data-1742895027
+2025/03/25 15:00:28 Submitted verification result, tx: 0xa7db80382035164a3e089c88eb6692e1690cd9ff491e2da9482154c7af1fc7d1
+2025/03/25 15:00:28 Successfully submitted farm score to smart contract for farm farm-data-1742895027
+2025/03/25 15:00:28 Submitted verification result, tx: 0xa7db80382035164a3e089c88eb6692e1690cd9ff491e2da9482154c7af1fc7d1
+2025/03/25 15:00:28 Successfully submitted farm score to smart contract for farm farm-data-1742895027
+2025/03/25 15:00:32 Consensus reached for request farm-data-1742895027 with score 35.367398
+2025/03/25 15:00:32 Would submit consensus result to protocol master contract: requestID=farm-data-1742895027, score=35.367398
+2025/03/25 15:00:32 Successfully submitted consensus result for request farm-data-1742895027
+2025/03/25 15:00:41 Received farm data from peer 62c7f53a for request farm-data-1742895041
+2025/03/25 15:00:41 Calculated farm score 35.367398 for request farm-data-1742895041 based on peer data
+2025/03/25 15:00:41 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742895041
+2025/03/25 15:00:41 Forwarding farm score 35.367398 for farm farm-data-1742895041 to validator
+2025/03/25 15:00:41 Submitting farm score for farm farm-data-1742895041: 35.367398
+2025/03/25 15:00:41 Consensus reached for farm farm-data-1742895041 with score: 35.367398
+2025/03/25 15:00:41 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742895041
+2025/03/25 15:00:41 Forwarding farm score 35.367398 for farm farm-data-1742895041 to validator
+2025/03/25 15:00:41 Submitting farm score for farm farm-data-1742895041: 35.367398
+2025/03/25 15:00:41 Consensus reached for farm farm-data-1742895041 with score: 35.367398
+2025/03/25 15:00:41 Received farm data from peer 62c7f53a for request farm-data-1742895041
+2025/03/25 15:00:41 Calculated farm score 35.367398 for request farm-data-1742895041 based on peer data
+2025/03/25 15:00:41 Received farm data from peer 62c7f53a for request farm-data-1742895041
+2025/03/25 15:00:41 Calculated farm score 35.367398 for request farm-data-1742895041 based on peer data
+2025/03/25 15:00:41 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742895041
+2025/03/25 15:00:41 Forwarding farm score 35.367398 for farm farm-data-1742895041 to validator
+2025/03/25 15:00:41 Submitting farm score for farm farm-data-1742895041: 35.367398
+2025/03/25 15:00:41 Consensus reached for farm farm-data-1742895041 with score: 35.367398
+2025/03/25 15:00:41 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742895041
+2025/03/25 15:00:41 Forwarding farm score 35.367398 for farm farm-data-1742895041 to validator
+2025/03/25 15:00:41 Submitting farm score for farm farm-data-1742895041: 35.367398
+2025/03/25 15:00:41 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742895041
+2025/03/25 15:00:41 Forwarding farm score 35.367398 for farm farm-data-1742895041 to validator
+2025/03/25 15:00:41 Submitting farm score for farm farm-data-1742895041: 35.367398
+2025/03/25 15:00:41 Consensus reached for farm farm-data-1742895041 with score: 35.367398
+2025/03/25 15:00:41 Consensus reached for farm farm-data-1742895041 with score: 35.367398
+2025/03/25 15:00:41 Submitted verification result, tx: 0xc6ca1f3e8da0fcb9a83ec85602376707bf99cb712b889369e3bbfdcfe917f44d
+2025/03/25 15:00:41 Successfully submitted farm score to smart contract for farm farm-data-1742895041
+2025/03/25 15:00:41 Submitted verification result, tx: 0xc6ca1f3e8da0fcb9a83ec85602376707bf99cb712b889369e3bbfdcfe917f44d
+2025/03/25 15:00:41 Successfully submitted farm score to smart contract for farm farm-data-1742895041
+2025/03/25 15:00:41 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742895041
+2025/03/25 15:00:41 Forwarding farm score 35.367398 for farm farm-data-1742895041 to validator
+2025/03/25 15:00:41 Submitting farm score for farm farm-data-1742895041: 35.367398
+2025/03/25 15:00:41 Consensus reached for farm farm-data-1742895041 with score: 35.367398
+2025/03/25 15:00:41 Submitted verification result, tx: 0xc6ca1f3e8da0fcb9a83ec85602376707bf99cb712b889369e3bbfdcfe917f44d
+2025/03/25 15:00:41 Successfully submitted farm score to smart contract for farm farm-data-1742895041
+2025/03/25 15:00:42 Consensus reached for request farm-data-1742895041 with score 35.367398
+2025/03/25 15:00:42 Would submit consensus result to protocol master contract: requestID=farm-data-1742895041, score=35.367398
+2025/03/25 15:00:42 Successfully submitted consensus result for request farm-data-1742895041
+2025/03/25 15:00:42 Submitted verification result, tx: 0xc6ca1f3e8da0fcb9a83ec85602376707bf99cb712b889369e3bbfdcfe917f44d
+2025/03/25 15:00:42 Successfully submitted farm score to smart contract for farm farm-data-1742895041
+2025/03/25 15:00:42 Submitted verification result, tx: 0xc6ca1f3e8da0fcb9a83ec85602376707bf99cb712b889369e3bbfdcfe917f44d
+2025/03/25 15:00:42 Successfully submitted farm score to smart contract for farm farm-data-1742895041
+2025/03/25 15:00:42 Submitted verification result, tx: 0xc6ca1f3e8da0fcb9a83ec85602376707bf99cb712b889369e3bbfdcfe917f44d
+2025/03/25 15:00:42 Successfully submitted farm score to smart contract for farm farm-data-1742895041
+2025/03/25 15:00:57 Processed farm data for request farm-data-1742895057, calculated score: 35.367398
+2025/03/25 15:00:57 Received farm data from peer 60fc3a8d for request farm-data-1742895057
+2025/03/25 15:00:57 Calculated farm score 35.367398 for request farm-data-1742895057 based on peer data
+2025/03/25 15:00:57 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742895057
+2025/03/25 15:00:57 Forwarding farm score 35.367398 for farm farm-data-1742895057 to validator
+2025/03/25 15:00:57 Submitting farm score for farm farm-data-1742895057: 35.367398
+2025/03/25 15:00:57 Consensus reached for farm farm-data-1742895057 with score: 35.367398
+2025/03/25 15:00:57 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742895057
+2025/03/25 15:00:57 Forwarding farm score 35.367398 for farm farm-data-1742895057 to validator
+2025/03/25 15:00:57 Submitting farm score for farm farm-data-1742895057: 35.367398
+2025/03/25 15:00:57 Consensus reached for farm farm-data-1742895057 with score: 35.367398
+2025/03/25 15:00:57 Received farm data from peer 60fc3a8d for request farm-data-1742895057
+2025/03/25 15:00:57 Calculated farm score 35.367398 for request farm-data-1742895057 based on peer data
+2025/03/25 15:00:57 Received farm data from peer 60fc3a8d for request farm-data-1742895057
+2025/03/25 15:00:57 Calculated farm score 35.367398 for request farm-data-1742895057 based on peer data
+2025/03/25 15:00:57 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742895057
+2025/03/25 15:00:57 Forwarding farm score 35.367398 for farm farm-data-1742895057 to validator
+2025/03/25 15:00:57 Submitting farm score for farm farm-data-1742895057: 35.367398
+2025/03/25 15:00:57 Consensus reached for farm farm-data-1742895057 with score: 35.367398
+2025/03/25 15:00:58 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742895057
+2025/03/25 15:00:58 Forwarding farm score 35.367398 for farm farm-data-1742895057 to validator
+2025/03/25 15:00:58 Submitting farm score for farm farm-data-1742895057: 35.367398
+2025/03/25 15:00:58 Consensus reached for farm farm-data-1742895057 with score: 35.367398
+2025/03/25 15:00:58 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742895057
+2025/03/25 15:00:58 Forwarding farm score 35.367398 for farm farm-data-1742895057 to validator
+2025/03/25 15:00:58 Submitting farm score for farm farm-data-1742895057: 35.367398
+2025/03/25 15:00:58 Consensus reached for farm farm-data-1742895057 with score: 35.367398
+2025/03/25 15:00:58 Submitted verification result, tx: 0x3637dbc9df264894da7d3efa5da120f7c08487cbac59f899991bc03026ca281c
+2025/03/25 15:00:58 Successfully submitted farm score to smart contract for farm farm-data-1742895057
+2025/03/25 15:00:58 Submitted verification result, tx: 0x3637dbc9df264894da7d3efa5da120f7c08487cbac59f899991bc03026ca281c
+2025/03/25 15:00:58 Successfully submitted farm score to smart contract for farm farm-data-1742895057
+2025/03/25 15:00:58 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742895057
+2025/03/25 15:00:58 Forwarding farm score 35.367398 for farm farm-data-1742895057 to validator
+2025/03/25 15:00:58 Submitting farm score for farm farm-data-1742895057: 35.367398
+2025/03/25 15:00:58 Consensus reached for farm farm-data-1742895057 with score: 35.367398
+2025/03/25 15:00:58 Submitted verification result, tx: 0x3637dbc9df264894da7d3efa5da120f7c08487cbac59f899991bc03026ca281c
+2025/03/25 15:00:58 Successfully submitted farm score to smart contract for farm farm-data-1742895057
+2025/03/25 15:00:59 Submitted verification result, tx: 0x3637dbc9df264894da7d3efa5da120f7c08487cbac59f899991bc03026ca281c
+2025/03/25 15:00:59 Successfully submitted farm score to smart contract for farm farm-data-1742895057
+2025/03/25 15:00:59 Submitted verification result, tx: 0x3637dbc9df264894da7d3efa5da120f7c08487cbac59f899991bc03026ca281c
+2025/03/25 15:00:59 Successfully submitted farm score to smart contract for farm farm-data-1742895057
+2025/03/25 15:00:59 Submitted verification result, tx: 0x3637dbc9df264894da7d3efa5da120f7c08487cbac59f899991bc03026ca281c
+2025/03/25 15:00:59 Successfully submitted farm score to smart contract for farm farm-data-1742895057
+2025/03/25 15:01:02 Consensus reached for request farm-data-1742895057 with score 35.367398
+2025/03/25 15:01:02 Would submit consensus result to protocol master contract: requestID=farm-data-1742895057, score=35.367398
+2025/03/25 15:01:02 Successfully submitted consensus result for request farm-data-1742895057
+2025/03/25 15:01:11 Received farm data from peer 62c7f53a for request farm-data-1742895071
+2025/03/25 15:01:11 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742895071
+2025/03/25 15:01:11 Forwarding farm score 35.367398 for farm farm-data-1742895071 to validator
+2025/03/25 15:01:11 Submitting farm score for farm farm-data-1742895071: 35.367398
+2025/03/25 15:01:11 Received farm data from peer 62c7f53a for request farm-data-1742895071
+2025/03/25 15:01:11 Calculated farm score 35.367398 for request farm-data-1742895071 based on peer data
+2025/03/25 15:01:11 Consensus reached for farm farm-data-1742895071 with score: 35.367398
+2025/03/25 15:01:11 Calculated farm score 35.367398 for request farm-data-1742895071 based on peer data
+2025/03/25 15:01:11 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742895071
+2025/03/25 15:01:11 Forwarding farm score 35.367398 for farm farm-data-1742895071 to validator
+2025/03/25 15:01:11 Submitting farm score for farm farm-data-1742895071: 35.367398
+2025/03/25 15:01:11 Consensus reached for farm farm-data-1742895071 with score: 35.367398
+2025/03/25 15:01:11 Received farm data from peer 62c7f53a for request farm-data-1742895071
+2025/03/25 15:01:11 Calculated farm score 35.367398 for request farm-data-1742895071 based on peer data
+2025/03/25 15:01:11 Received farm score 35.367398 from peer 60fc3a8d for request farm-data-1742895071
+2025/03/25 15:01:11 Forwarding farm score 35.367398 for farm farm-data-1742895071 to validator
+2025/03/25 15:01:11 Submitting farm score for farm farm-data-1742895071: 35.367398
+2025/03/25 15:01:11 Consensus reached for farm farm-data-1742895071 with score: 35.367398
+2025/03/25 15:01:11 Submitted verification result, tx: 0xa3d66bedc4d7ef11d1f8a5072ddff10296572e5a9dcc1964ec2b0a6653746e79
+2025/03/25 15:01:11 Successfully submitted farm score to smart contract for farm farm-data-1742895071
+2025/03/25 15:01:11 Received farm score 35.367398 from peer 62c7f53a for request farm-data-1742895071
+2025/03/25 15:01:11 Forwarding farm score 35.367398 for farm farm-data-1742895071 to validator
+2025/03/25 15:01:11 Submitting farm score for farm farm-data-1742895071: 35.367398
+2025/03/25 15:01:11 Consensus reached for farm farm-data-1742895071 with score: 35.367398
+2025/03/25 15:01:11 Submitted verification result, tx: 0xa3d66bedc4d7ef11d1f8a5072ddff10296572e5a9dcc1964ec2b0a6653746e79
+2025/03/25 15:01:11 Successfully submitted farm score to smart contract for farm farm-data-1742895071
+2025/03/25 15:01:12 Consensus reached for request farm-data-1742895071 with score 35.367398
+2025/03/25 15:01:12 Would submit consensus result to protocol master contract: requestID=farm-data-1742895071, score=35.367398
+2025/03/25 15:01:12 Successfully submitted consensus result for request farm-data-1742895071
+2025/03/25 15:01:12 Submitted verification result, tx: 0xa3d66bedc4d7ef11d1f8a5072ddff10296572e5a9dcc1964ec2b0a6653746e79
+2025/03/25 15:01:12 Successfully submitted farm score to smart contract for farm farm-data-1742895071
+2025/03/25 15:01:12 Submitted verification result, tx: 0xa3d66bedc4d7ef11d1f8a5072ddff10296572e5a9dcc1964ec2b0a6653746e79
+2025/03/25 15:01:12 Successfully submitted farm score to smart contract for farm farm-data-1742895071
+
+Stopping validator node...
+2025/03/25 15:01:13 Stopping p2p gossip protocol for validator 60fc3a8d
+2025/03/25 15:01:13 P2P Gossip engine stopped
+Validator node stopped.

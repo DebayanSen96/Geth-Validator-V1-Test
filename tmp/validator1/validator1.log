@@ -1,0 +1,1 @@
+Error loading configuration: missing required environment variables: BASE_RPC_URL, DXP_CONTRACT_ADDRESS, WALLET_PRIVATE_KEY

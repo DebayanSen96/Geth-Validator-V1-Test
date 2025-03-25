@@ -1,0 +1,423 @@
+2025/03/25 14:52:07 Farm score callback registered for validator 894e2fa7
+Running in TEST MODE - bypassing blockchain registration check
+Starting validator node...
+2025/03/25 14:52:07 Starting p2p gossip protocol for validator 894e2fa7
+2025/03/25 14:52:07 P2P Gossip engine started on 127.0.0.1:30301 with node ID 894e2fa7
+2025/03/25 14:52:07 Discovering peer validators from config
+2025/03/25 14:52:07 Discovering peer validators from 1 known addresses
+2025/03/25 14:52:07 Adding peer validator peer-127.0.0.1-30302 at address 127.0.0.1:30302
+2025/03/25 14:52:07 Added peer peer-127.0.0.1-30302 at 127.0.0.1:30302
+Validator node started successfully!
+2025/03/25 14:52:07 Fetching farm data from protocol master contract
+2025/03/25 14:52:07 Fetching active farm IDs from protocol master contract
+2025/03/25 14:52:07 Processing data for 3 active farms
+2025/03/25 14:52:07 Fetching returns data for farm 1
+2025/03/25 14:52:07 Fetching returns data for farm 1 from protocol master contract
+2025/03/25 14:52:07 Calculated farm score for farm 1: 35.367398
+2025/03/25 14:52:07 Submitting farm score for farm 1: 35.367398
+2025/03/25 14:52:07 Consensus reached for farm 1 with score: 35.367398
+2025/03/25 14:52:09 Submitted verification result, tx: 0x94f52806f65ee989072f2a28fc0c7ee5254d8322143c1601e044ca506f056ad7
+2025/03/25 14:52:09 Successfully submitted farm score to smart contract for farm 1
+2025/03/25 14:52:09 Broadcasting farm score 35.367398 for farm 1 to peers
+2025/03/25 14:52:09 Broadcasting message of type farm_score from 894e2fa7
+2025/03/25 14:52:09 Received farm score 35.367398 from peer 894e2fa7 for request 1
+2025/03/25 14:52:09 Forwarding farm score 35.367398 for farm 1 to validator
+2025/03/25 14:52:09 Submitting farm score for farm 1: 35.367398
+2025/03/25 14:52:09 Consensus reached for farm 1 with score: 35.367398
+2025/03/25 14:52:09 Failed to connect to peer peer-127.0.0.1-30302 at 127.0.0.1:30302: dial tcp 127.0.0.1:30302: connect: connection refused
+2025/03/25 14:52:10 Submitted verification result, tx: 0x94f52806f65ee989072f2a28fc0c7ee5254d8322143c1601e044ca506f056ad7
+2025/03/25 14:52:10 Successfully submitted farm score to smart contract for farm 1
+2025/03/25 14:52:10 Fetching returns data for farm 2
+2025/03/25 14:52:10 Fetching returns data for farm 2 from protocol master contract
+2025/03/25 14:52:10 Calculated farm score for farm 2: 35.367398
+2025/03/25 14:52:10 Submitting farm score for farm 2: 35.367398
+2025/03/25 14:52:10 Consensus reached for farm 2 with score: 35.367398
+2025/03/25 14:52:10 Submitted verification result, tx: 0x6bfbbfa8e74ab79c78546eee713ba0a86f33b37de399fe5487541b58b8c3543c
+2025/03/25 14:52:10 Successfully submitted farm score to smart contract for farm 2
+2025/03/25 14:52:10 Broadcasting farm score 35.367398 for farm 2 to peers
+2025/03/25 14:52:10 Broadcasting message of type farm_score from 894e2fa7
+2025/03/25 14:52:10 Received farm score 35.367398 from peer 894e2fa7 for request 2
+2025/03/25 14:52:10 Forwarding farm score 35.367398 for farm 2 to validator
+2025/03/25 14:52:10 Submitting farm score for farm 2: 35.367398
+2025/03/25 14:52:10 Consensus reached for farm 2 with score: 35.367398
+2025/03/25 14:52:10 Failed to connect to peer peer-127.0.0.1-30302 at 127.0.0.1:30302: dial tcp 127.0.0.1:30302: connect: connection refused
+2025/03/25 14:52:11 Submitted verification result, tx: 0x6bfbbfa8e74ab79c78546eee713ba0a86f33b37de399fe5487541b58b8c3543c
+2025/03/25 14:52:11 Successfully submitted farm score to smart contract for farm 2
+2025/03/25 14:52:11 Fetching returns data for farm 3
+2025/03/25 14:52:11 Fetching returns data for farm 3 from protocol master contract
+2025/03/25 14:52:11 Calculated farm score for farm 3: 35.367398
+2025/03/25 14:52:11 Submitting farm score for farm 3: 35.367398
+2025/03/25 14:52:11 Consensus reached for farm 3 with score: 35.367398
+2025/03/25 14:52:12 Submitted verification result, tx: 0xc9e371a952988585bde37e0b7c03ab8bff7859d97f463f70742be545724985ac
+2025/03/25 14:52:12 Successfully submitted farm score to smart contract for farm 3
+2025/03/25 14:52:12 Broadcasting farm score 35.367398 for farm 3 to peers
+2025/03/25 14:52:12 Broadcasting message of type farm_score from 894e2fa7
+2025/03/25 14:52:12 Received farm score 35.367398 from peer 894e2fa7 for request 3
+2025/03/25 14:52:12 Forwarding farm score 35.367398 for farm 3 to validator
+2025/03/25 14:52:12 Submitting farm score for farm 3: 35.367398
+2025/03/25 14:52:12 Consensus reached for farm 3 with score: 35.367398
+2025/03/25 14:52:12 Failed to connect to peer peer-127.0.0.1-30302 at 127.0.0.1:30302: dial tcp 127.0.0.1:30302: connect: connection refused
+2025/03/25 14:52:12 Consensus reached for request 1 with score 35.367398
+2025/03/25 14:52:12 Would submit consensus result to protocol master contract: requestID=1, score=35.367398
+2025/03/25 14:52:12 Successfully submitted consensus result for request 1
+2025/03/25 14:52:12 Consensus reached for request 2 with score 35.367398
+2025/03/25 14:52:12 Would submit consensus result to protocol master contract: requestID=2, score=35.367398
+2025/03/25 14:52:12 Successfully submitted consensus result for request 2
+2025/03/25 14:52:12 Consensus reached for request 3 with score 35.367398
+2025/03/25 14:52:12 Would submit consensus result to protocol master contract: requestID=3, score=35.367398
+2025/03/25 14:52:12 Successfully submitted consensus result for request 3
+2025/03/25 14:52:12 Submitted verification result, tx: 0xc9e371a952988585bde37e0b7c03ab8bff7859d97f463f70742be545724985ac
+2025/03/25 14:52:12 Successfully submitted farm score to smart contract for farm 3
+2025/03/25 14:52:15 Received farm score 35.367398 from peer c8d5011a for request 1
+2025/03/25 14:52:15 Forwarding farm score 35.367398 for farm 1 to validator
+2025/03/25 14:52:15 Submitting farm score for farm 1: 35.367398
+2025/03/25 14:52:15 Consensus reached for farm 1 with score: 35.367398
+2025/03/25 14:52:16 Submitted verification result, tx: 0x9a453bbd719071c48f29314536bcb57a166d7655279864c30c984774c097bf04
+2025/03/25 14:52:16 Successfully submitted farm score to smart contract for farm 1
+2025/03/25 14:52:17 Consensus reached for request 1 with score 35.367398
+2025/03/25 14:52:17 Would submit consensus result to protocol master contract: requestID=1, score=35.367398
+2025/03/25 14:52:17 Successfully submitted consensus result for request 1
+2025/03/25 14:52:17 Discovered new peer 894e2fa7 at 1.742894537311291e+18
+2025/03/25 14:52:17 Received farm score 35.367398 from peer c8d5011a for request 2
+2025/03/25 14:52:17 Forwarding farm score 35.367398 for farm 2 to validator
+2025/03/25 14:52:17 Submitting farm score for farm 2: 35.367398
+2025/03/25 14:52:17 Consensus reached for farm 2 with score: 35.367398
+2025/03/25 14:52:18 Submitted verification result, tx: 0xc08456ba946ad883f42313e1fc2a672f205a0cb1b5a5e537958e3891996ff2da
+2025/03/25 14:52:18 Successfully submitted farm score to smart contract for farm 2
+2025/03/25 14:52:18 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:52:18 Received farm score 35.367398 from peer c8d5011a for request 3
+2025/03/25 14:52:18 Forwarding farm score 35.367398 for farm 3 to validator
+2025/03/25 14:52:18 Submitting farm score for farm 3: 35.367398
+2025/03/25 14:52:18 Consensus reached for farm 3 with score: 35.367398
+2025/03/25 14:52:19 Submitted verification result, tx: 0x4b2cd90d7ed334eb9505d409d40c18d942a41c929c72d22696c41983e4b24673
+2025/03/25 14:52:19 Successfully submitted farm score to smart contract for farm 3
+2025/03/25 14:52:19 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:52:22 Consensus reached for request 2 with score 35.367398
+2025/03/25 14:52:22 Would submit consensus result to protocol master contract: requestID=2, score=35.367398
+2025/03/25 14:52:22 Successfully submitted consensus result for request 2
+2025/03/25 14:52:22 Consensus reached for request 3 with score 35.367398
+2025/03/25 14:52:22 Would submit consensus result to protocol master contract: requestID=3, score=35.367398
+2025/03/25 14:52:22 Successfully submitted consensus result for request 3
+2025/03/25 14:52:23 Discovered new peer c8d5011a at 1.74289454393778e+18
+2025/03/25 14:52:23 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:52:23 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:52:27 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:52:27 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:52:33 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:52:33 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:52:37 Processed farm data for request farm-data-1742894557, calculated score: 35.367398
+2025/03/25 14:52:37 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:52:37 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:52:37 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:52:37 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:52:37 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:52:37 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:52:37 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:52:37 Consensus reached for request farm-data-1742894557 with score 35.367398
+2025/03/25 14:52:37 Would submit consensus result to protocol master contract: requestID=farm-data-1742894557, score=35.367398
+2025/03/25 14:52:37 Successfully submitted consensus result for request farm-data-1742894557
+2025/03/25 14:52:37 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:52:37 Received farm score 35.367398 from peer c8d5011a for request farm-data-1742894557
+2025/03/25 14:52:37 Forwarding farm score 35.367398 for farm farm-data-1742894557 to validator
+2025/03/25 14:52:37 Submitting farm score for farm farm-data-1742894557: 35.367398
+2025/03/25 14:52:37 Consensus reached for farm farm-data-1742894557 with score: 35.367398
+2025/03/25 14:52:37 Received farm data from peer 894e2fa7 for request farm-data-1742894557
+2025/03/25 14:52:37 Calculated farm score 35.367398 for request farm-data-1742894557 based on peer data
+2025/03/25 14:52:38 Submitted verification result, tx: 0x44560aea617d875303fc8c83528e80998a5d1989cba09d50d6b7f70096affa73
+2025/03/25 14:52:38 Successfully submitted farm score to smart contract for farm farm-data-1742894557
+2025/03/25 14:52:38 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:52:38 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:52:38 Received farm score 35.367398 from peer 894e2fa7 for request farm-data-1742894557
+2025/03/25 14:52:38 Forwarding farm score 35.367398 for farm farm-data-1742894557 to validator
+2025/03/25 14:52:38 Submitting farm score for farm farm-data-1742894557: 35.367398
+2025/03/25 14:52:38 Consensus reached for farm farm-data-1742894557 with score: 35.367398
+2025/03/25 14:52:39 Submitted verification result, tx: 0x44560aea617d875303fc8c83528e80998a5d1989cba09d50d6b7f70096affa73
+2025/03/25 14:52:39 Successfully submitted farm score to smart contract for farm farm-data-1742894557
+2025/03/25 14:52:42 Consensus reached for request farm-data-1742894557 with score 35.367398
+2025/03/25 14:52:42 Would submit consensus result to protocol master contract: requestID=farm-data-1742894557, score=35.367398
+2025/03/25 14:52:42 Successfully submitted consensus result for request farm-data-1742894557
+2025/03/25 14:52:43 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:52:43 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:52:43 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:52:43 Received farm data from peer c8d5011a for request farm-data-1742894563
+2025/03/25 14:52:43 Received farm score 35.367398 from peer c8d5011a for request farm-data-1742894563
+2025/03/25 14:52:43 Forwarding farm score 35.367398 for farm farm-data-1742894563 to validator
+2025/03/25 14:52:43 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:52:43 Submitting farm score for farm farm-data-1742894563: 35.367398
+2025/03/25 14:52:43 Consensus reached for farm farm-data-1742894563 with score: 35.367398
+2025/03/25 14:52:43 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:52:43 Calculated farm score 35.367398 for request farm-data-1742894563 based on peer data
+2025/03/25 14:52:43 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:52:43 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:52:43 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:52:44 Submitted verification result, tx: 0x44560aea617d875303fc8c83528e80998a5d1989cba09d50d6b7f70096affa73
+2025/03/25 14:52:44 Successfully submitted farm score to smart contract for farm farm-data-1742894563
+2025/03/25 14:52:44 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:52:44 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:52:44 Received farm score 35.367398 from peer 894e2fa7 for request farm-data-1742894563
+2025/03/25 14:52:44 Forwarding farm score 35.367398 for farm farm-data-1742894563 to validator
+2025/03/25 14:52:44 Submitting farm score for farm farm-data-1742894563: 35.367398
+2025/03/25 14:52:44 Consensus reached for farm farm-data-1742894563 with score: 35.367398
+2025/03/25 14:52:45 Submitted verification result, tx: 0x44560aea617d875303fc8c83528e80998a5d1989cba09d50d6b7f70096affa73
+2025/03/25 14:52:45 Successfully submitted farm score to smart contract for farm farm-data-1742894563
+2025/03/25 14:52:47 Consensus reached for request farm-data-1742894563 with score 35.367398
+2025/03/25 14:52:47 Would submit consensus result to protocol master contract: requestID=farm-data-1742894563, score=35.367398
+2025/03/25 14:52:47 Successfully submitted consensus result for request farm-data-1742894563
+2025/03/25 14:52:47 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:52:47 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:52:53 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:52:53 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:52:57 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:52:57 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:03 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:03 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:07 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:07 Processed farm data for request farm-data-1742894587, calculated score: 35.367398
+2025/03/25 14:53:07 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:07 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:07 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:07 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:07 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:07 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:07 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:07 Received farm data from peer 894e2fa7 for request farm-data-1742894587
+2025/03/25 14:53:07 Calculated farm score 35.367398 for request farm-data-1742894587 based on peer data
+2025/03/25 14:53:07 Received farm score 35.367398 from peer c8d5011a for request farm-data-1742894587
+2025/03/25 14:53:07 Forwarding farm score 35.367398 for farm farm-data-1742894587 to validator
+2025/03/25 14:53:07 Submitting farm score for farm farm-data-1742894587: 35.367398
+2025/03/25 14:53:07 Consensus reached for farm farm-data-1742894587 with score: 35.367398
+2025/03/25 14:53:08 Submitted verification result, tx: 0x33dce7e428c5ee6c6fdd9cec30d2e3180309ca3b12302a419a990297e0fabc2e
+2025/03/25 14:53:08 Successfully submitted farm score to smart contract for farm farm-data-1742894587
+2025/03/25 14:53:08 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:08 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:08 Received farm score 35.367398 from peer 894e2fa7 for request farm-data-1742894587
+2025/03/25 14:53:08 Forwarding farm score 35.367398 for farm farm-data-1742894587 to validator
+2025/03/25 14:53:08 Submitting farm score for farm farm-data-1742894587: 35.367398
+2025/03/25 14:53:08 Consensus reached for farm farm-data-1742894587 with score: 35.367398
+2025/03/25 14:53:08 Submitted verification result, tx: 0x33dce7e428c5ee6c6fdd9cec30d2e3180309ca3b12302a419a990297e0fabc2e
+2025/03/25 14:53:08 Successfully submitted farm score to smart contract for farm farm-data-1742894587
+2025/03/25 14:53:12 Consensus reached for request farm-data-1742894587 with score 35.367398
+2025/03/25 14:53:12 Would submit consensus result to protocol master contract: requestID=farm-data-1742894587, score=35.367398
+2025/03/25 14:53:12 Successfully submitted consensus result for request farm-data-1742894587
+2025/03/25 14:53:13 Received farm score 35.367398 from peer c8d5011a for request farm-data-1742894593
+2025/03/25 14:53:13 Forwarding farm score 35.367398 for farm farm-data-1742894593 to validator
+2025/03/25 14:53:13 Submitting farm score for farm farm-data-1742894593: 35.367398
+2025/03/25 14:53:13 Received farm data from peer c8d5011a for request farm-data-1742894593
+2025/03/25 14:53:13 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:13 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:13 Calculated farm score 35.367398 for request farm-data-1742894593 based on peer data
+2025/03/25 14:53:13 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:13 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:13 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:13 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:13 Consensus reached for farm farm-data-1742894593 with score: 35.367398
+2025/03/25 14:53:13 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:13 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:14 Submitted verification result, tx: 0x647f3f6fe4166fda02c13015a3bec7ef8128da19751f4cdbaba03045e29a6ae9
+2025/03/25 14:53:14 Successfully submitted farm score to smart contract for farm farm-data-1742894593
+2025/03/25 14:53:14 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:14 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:14 Received farm score 35.367398 from peer 894e2fa7 for request farm-data-1742894593
+2025/03/25 14:53:14 Forwarding farm score 35.367398 for farm farm-data-1742894593 to validator
+2025/03/25 14:53:14 Submitting farm score for farm farm-data-1742894593: 35.367398
+2025/03/25 14:53:14 Consensus reached for farm farm-data-1742894593 with score: 35.367398
+2025/03/25 14:53:15 Submitted verification result, tx: 0x647f3f6fe4166fda02c13015a3bec7ef8128da19751f4cdbaba03045e29a6ae9
+2025/03/25 14:53:15 Successfully submitted farm score to smart contract for farm farm-data-1742894593
+2025/03/25 14:53:17 Consensus reached for request farm-data-1742894593 with score 35.367398
+2025/03/25 14:53:17 Would submit consensus result to protocol master contract: requestID=farm-data-1742894593, score=35.367398
+2025/03/25 14:53:17 Successfully submitted consensus result for request farm-data-1742894593
+2025/03/25 14:53:17 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:17 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:23 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:23 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:27 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:27 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:33 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:33 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:37 Processed farm data for request farm-data-1742894617, calculated score: 35.367398
+2025/03/25 14:53:37 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:37 Consensus reached for request farm-data-1742894617 with score 35.367398
+2025/03/25 14:53:37 Would submit consensus result to protocol master contract: requestID=farm-data-1742894617, score=35.367398
+2025/03/25 14:53:37 Successfully submitted consensus result for request farm-data-1742894617
+2025/03/25 14:53:37 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:37 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:37 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:37 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:37 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:37 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:37 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:37 Received farm score 35.367398 from peer c8d5011a for request farm-data-1742894617
+2025/03/25 14:53:37 Forwarding farm score 35.367398 for farm farm-data-1742894617 to validator
+2025/03/25 14:53:37 Received farm data from peer 894e2fa7 for request farm-data-1742894617
+2025/03/25 14:53:37 Calculated farm score 35.367398 for request farm-data-1742894617 based on peer data
+2025/03/25 14:53:37 Submitting farm score for farm farm-data-1742894617: 35.367398
+2025/03/25 14:53:37 Consensus reached for farm farm-data-1742894617 with score: 35.367398
+2025/03/25 14:53:38 Submitted verification result, tx: 0x82b201fbdc22ece8080fc3e77162c5332cf4023aef9e13a60ea2d2f9290aefeb
+2025/03/25 14:53:38 Successfully submitted farm score to smart contract for farm farm-data-1742894617
+2025/03/25 14:53:38 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:38 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:38 Received farm score 35.367398 from peer 894e2fa7 for request farm-data-1742894617
+2025/03/25 14:53:38 Forwarding farm score 35.367398 for farm farm-data-1742894617 to validator
+2025/03/25 14:53:38 Submitting farm score for farm farm-data-1742894617: 35.367398
+2025/03/25 14:53:38 Consensus reached for farm farm-data-1742894617 with score: 35.367398
+2025/03/25 14:53:39 Submitted verification result, tx: 0x82b201fbdc22ece8080fc3e77162c5332cf4023aef9e13a60ea2d2f9290aefeb
+2025/03/25 14:53:39 Successfully submitted farm score to smart contract for farm farm-data-1742894617
+2025/03/25 14:53:42 Consensus reached for request farm-data-1742894617 with score 35.367398
+2025/03/25 14:53:42 Would submit consensus result to protocol master contract: requestID=farm-data-1742894617, score=35.367398
+2025/03/25 14:53:42 Successfully submitted consensus result for request farm-data-1742894617
+2025/03/25 14:53:43 Received farm data from peer c8d5011a for request farm-data-1742894623
+2025/03/25 14:53:43 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:43 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:43 Calculated farm score 35.367398 for request farm-data-1742894623 based on peer data
+2025/03/25 14:53:43 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:43 Received farm score 35.367398 from peer c8d5011a for request farm-data-1742894623
+2025/03/25 14:53:43 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:43 Forwarding farm score 35.367398 for farm farm-data-1742894623 to validator
+2025/03/25 14:53:43 Submitting farm score for farm farm-data-1742894623: 35.367398
+2025/03/25 14:53:43 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:43 Consensus reached for farm farm-data-1742894623 with score: 35.367398
+2025/03/25 14:53:43 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:43 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:43 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:45 Submitted verification result, tx: 0x82b201fbdc22ece8080fc3e77162c5332cf4023aef9e13a60ea2d2f9290aefeb
+2025/03/25 14:53:45 Successfully submitted farm score to smart contract for farm farm-data-1742894623
+2025/03/25 14:53:45 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:45 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:45 Received farm score 35.367398 from peer 894e2fa7 for request farm-data-1742894623
+2025/03/25 14:53:45 Forwarding farm score 35.367398 for farm farm-data-1742894623 to validator
+2025/03/25 14:53:45 Submitting farm score for farm farm-data-1742894623: 35.367398
+2025/03/25 14:53:45 Consensus reached for farm farm-data-1742894623 with score: 35.367398
+2025/03/25 14:53:46 Submitted verification result, tx: 0x82b201fbdc22ece8080fc3e77162c5332cf4023aef9e13a60ea2d2f9290aefeb
+2025/03/25 14:53:46 Successfully submitted farm score to smart contract for farm farm-data-1742894623
+2025/03/25 14:53:47 Consensus reached for request farm-data-1742894623 with score 35.367398
+2025/03/25 14:53:47 Would submit consensus result to protocol master contract: requestID=farm-data-1742894623, score=35.367398
+2025/03/25 14:53:47 Successfully submitted consensus result for request farm-data-1742894623
+2025/03/25 14:53:47 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:47 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:53 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:53 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:57 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:53:57 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:53:57 Found verification request: 7977260
+2025/03/25 14:54:02 Processing verification request: 7977260
+2025/03/25 14:54:03 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:54:03 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:54:04 Submitted verification result, tx: 0x3823c494ecbcddb1aa20d87d2562f3a38dfd907edf259cf6f8b821825f8d218e
+2025/03/25 14:54:04 Successfully processed verification request: 7977260
+2025/03/25 14:54:07 Processed farm data for request farm-data-1742894647, calculated score: 35.367398
+2025/03/25 14:54:07 Removed stale peer peer-127.0.0.1-30302
+2025/03/25 14:54:07 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:54:07 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:54:07 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:54:07 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:54:07 Consensus reached for request farm-data-1742894647 with score 35.367398
+2025/03/25 14:54:07 Would submit consensus result to protocol master contract: requestID=farm-data-1742894647, score=35.367398
+2025/03/25 14:54:07 Successfully submitted consensus result for request farm-data-1742894647
+2025/03/25 14:54:07 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:54:07 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:54:07 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:54:07 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:54:07 Received farm score 35.367398 from peer c8d5011a for request farm-data-1742894647
+2025/03/25 14:54:07 Forwarding farm score 35.367398 for farm farm-data-1742894647 to validator
+2025/03/25 14:54:07 Submitting farm score for farm farm-data-1742894647: 35.367398
+2025/03/25 14:54:07 Received farm data from peer 894e2fa7 for request farm-data-1742894647
+2025/03/25 14:54:07 Consensus reached for farm farm-data-1742894647 with score: 35.367398
+2025/03/25 14:54:07 Calculated farm score 35.367398 for request farm-data-1742894647 based on peer data
+2025/03/25 14:54:08 Submitted verification result, tx: 0x1550e0fcfd21851df81a58c9dced4b6799ba18714ff6173788c55ff2f15ecaed
+2025/03/25 14:54:08 Successfully submitted farm score to smart contract for farm farm-data-1742894647
+2025/03/25 14:54:08 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:54:08 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:54:08 Received farm score 35.367398 from peer 894e2fa7 for request farm-data-1742894647
+2025/03/25 14:54:08 Forwarding farm score 35.367398 for farm farm-data-1742894647 to validator
+2025/03/25 14:54:08 Submitting farm score for farm farm-data-1742894647: 35.367398
+2025/03/25 14:54:08 Consensus reached for farm farm-data-1742894647 with score: 35.367398
+2025/03/25 14:54:08 Submitted verification result, tx: 0x1550e0fcfd21851df81a58c9dced4b6799ba18714ff6173788c55ff2f15ecaed
+2025/03/25 14:54:08 Successfully submitted farm score to smart contract for farm farm-data-1742894647
+2025/03/25 14:54:12 Consensus reached for request farm-data-1742894647 with score 35.367398
+2025/03/25 14:54:12 Would submit consensus result to protocol master contract: requestID=farm-data-1742894647, score=35.367398
+2025/03/25 14:54:12 Successfully submitted consensus result for request farm-data-1742894647
+2025/03/25 14:54:13 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:54:13 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:54:13 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:54:13 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:54:17 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:54:17 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:54:27 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:54:27 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:54:37 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:54:37 Processed farm data for request farm-data-1742894677, calculated score: 35.367398
+2025/03/25 14:54:37 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:54:37 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:54:37 Consensus reached for request farm-data-1742894677 with score 35.367398
+2025/03/25 14:54:37 Would submit consensus result to protocol master contract: requestID=farm-data-1742894677, score=35.367398
+2025/03/25 14:54:37 Successfully submitted consensus result for request farm-data-1742894677
+2025/03/25 14:54:37 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:54:37 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:54:37 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:54:37 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:54:37 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:54:47 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:54:47 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:54:57 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:54:57 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:55:07 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:55:07 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:55:07 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:55:07 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:55:07 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:55:07 Processed farm data for request farm-data-1742894707, calculated score: 35.367398
+2025/03/25 14:55:07 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:55:07 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:55:07 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:55:12 Consensus reached for request farm-data-1742894707 with score 35.367398
+2025/03/25 14:55:12 Would submit consensus result to protocol master contract: requestID=farm-data-1742894707, score=35.367398
+2025/03/25 14:55:12 Successfully submitted consensus result for request farm-data-1742894707
+2025/03/25 14:55:17 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:55:17 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:55:27 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:55:27 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:55:37 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:55:37 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:55:37 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:55:37 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:55:37 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:55:37 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:55:37 Processed farm data for request farm-data-1742894737, calculated score: 35.367398
+2025/03/25 14:55:37 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:55:37 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:55:42 Consensus reached for request farm-data-1742894737 with score 35.367398
+2025/03/25 14:55:42 Would submit consensus result to protocol master contract: requestID=farm-data-1742894737, score=35.367398
+2025/03/25 14:55:42 Successfully submitted consensus result for request farm-data-1742894737
+2025/03/25 14:55:47 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:55:47 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:55:57 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:55:57 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:55:57 Found verification request: 7977270
+2025/03/25 14:56:02 Processing verification request: 7977270
+2025/03/25 14:56:04 Submitted verification result, tx: 0xd3fa35ae54f0ed58b0388d5be9b9f735de0fcb817504d0ca38264a019730e302
+2025/03/25 14:56:04 Successfully processed verification request: 7977270
+2025/03/25 14:56:07 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:56:07 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:56:07 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:56:07 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:56:07 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:56:07 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:56:07 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:56:07 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:56:07 Processed farm data for request farm-data-1742894767, calculated score: 35.367398
+2025/03/25 14:56:12 Consensus reached for request farm-data-1742894767 with score 35.367398
+2025/03/25 14:56:12 Would submit consensus result to protocol master contract: requestID=farm-data-1742894767, score=35.367398
+2025/03/25 14:56:12 Successfully submitted consensus result for request farm-data-1742894767
+2025/03/25 14:56:17 Removed stale peer 894e2fa7
+2025/03/25 14:56:17 Removed stale peer c8d5011a
+2025/03/25 14:56:17 Failed to connect to peer c8d5011a at 1.74289454393778e+18: dial tcp: address 1.74289454393778e+18: missing port in address
+2025/03/25 14:56:17 Failed to connect to peer 894e2fa7 at 1.742894537311291e+18: dial tcp: address 1.742894537311291e+18: missing port in address
+2025/03/25 14:56:37 Processed farm data for request farm-data-1742894797, calculated score: 35.367398
+2025/03/25 14:56:42 Consensus reached for request farm-data-1742894797 with score 35.367398
+2025/03/25 14:56:42 Would submit consensus result to protocol master contract: requestID=farm-data-1742894797, score=35.367398
+2025/03/25 14:56:42 Successfully submitted consensus result for request farm-data-1742894797
+
+Stopping validator node...
+2025/03/25 14:57:02 Stopping p2p gossip protocol for validator 894e2fa7
+2025/03/25 14:57:02 P2P Gossip engine stopped
+Validator node stopped.

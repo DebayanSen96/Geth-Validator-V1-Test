@@ -2,8 +2,12 @@ package config
 
 import (
 	"errors"
+	"fmt"
 	"os"
 	"strconv"
+	"strings"
+
+	"github.com/joho/godotenv"
 )
 
 // Config holds the configuration for the validator node
@@ -16,10 +20,20 @@ type Config struct {
 	ChainID           int64
 	LogLevel          string
 	DataDir           string
+	PeerAddresses     []string // List of peer validator addresses for p2p communication
 }
 
-// LoadConfig loads configuration from environment variables
-func LoadConfig() (*Config, error) {
+// LoadConfig loads configuration from environment variables or a specified file
+func LoadConfig(configPath ...string) (*Config, error) {
+	// If a config file is specified, load it
+	if len(configPath) > 0 && configPath[0] != "" {
+		// Load .env file from the specified path
+		err := godotenv.Load(configPath[0])
+		if err != nil {
+			return nil, fmt.Errorf("error loading config file: %w", err)
+		}
+	}
+
 	// Get required environment variables
 	baseRPCURL := os.Getenv("BASE_RPC_URL")
 	dxpContractAddress := os.Getenv("DXP_CONTRACT_ADDRESS")
@@ -62,6 +76,16 @@ func LoadConfig() (*Config, error) {
 		dataDir = value
 	}
 
+	// Parse peer addresses from environment variable
+	var peerAddresses []string
+	if value := os.Getenv("PEER_ADDRESSES"); value != "" {
+		// Split by comma to get multiple peer addresses
+		peerAddresses = strings.Split(value, ",")
+		for i, addr := range peerAddresses {
+			peerAddresses[i] = strings.TrimSpace(addr)
+		}
+	}
+
 	return &Config{
 		BaseRPCURL:        baseRPCURL,
 		DXPContractAddress: dxpContractAddress,
@@ -71,5 +95,6 @@ func LoadConfig() (*Config, error) {
 		ChainID:           chainID,
 		LogLevel:          logLevel,
 		DataDir:           dataDir,
+		PeerAddresses:     peerAddresses,
 	}, nil
 }

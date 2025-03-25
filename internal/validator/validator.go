@@ -7,6 +7,9 @@ import (
 	"fmt"
 	"log"
 	"math/big"
+	"os"
+	"strconv"
+	"strings"
 	"sync"
 	"time"
 
@@ -14,6 +17,7 @@ import (
 	"github.com/dexponent/geth-validator/internal/config"
 	"github.com/dexponent/geth-validator/internal/consensus"
 	"github.com/dexponent/geth-validator/internal/contracts"
+	"github.com/dexponent/geth-validator/internal/p2p"
 	"github.com/dexponent/geth-validator/internal/proof"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"
@@ -55,6 +59,7 @@ type Validator struct {
 	consensusEngine  *consensus.Engine
 	computeEngine    *compute.Engine
 	proofGenerator   *proof.Generator
+	p2pIntegration   *p2p.ValidatorP2PIntegration
 	mutex            sync.Mutex
 	cancel          context.CancelFunc
 }
@@ -113,7 +118,28 @@ func NewValidator(cfg *config.Config) (*Validator, error) {
 	// Create proof generator
 	proofGenerator := proof.NewGenerator()
 
-	return &Validator{
+	// Check if P2P_PORT environment variable is set
+	listenPort := 30300
+	if p2pPort := os.Getenv("P2P_PORT"); p2pPort != "" {
+		if port, err := strconv.Atoi(p2pPort); err == nil {
+			listenPort = port
+		}
+	} else {
+		// Default p2p listen address - use port 30300 + random offset to avoid conflicts
+		listenPort += int(time.Now().UnixNano()%1000)
+	}
+	listenAddr := fmt.Sprintf("127.0.0.1:%d", listenPort)
+
+	// Create p2p integration
+	p2pIntegration := p2p.NewValidatorP2PIntegration(
+		nodeID,
+		listenAddr,
+		client,
+		common.HexToAddress(cfg.DXPContractAddress),
+	)
+
+	// Create validator instance
+	validator := &Validator{
 		client:          client,
 		contract:        contract,
 		config:          cfg,
@@ -127,8 +153,16 @@ func NewValidator(cfg *config.Config) (*Validator, error) {
 		consensusEngine:  consensusEngine,
 		computeEngine:    computeEngine,
 		proofGenerator:   proofGenerator,
+		p2pIntegration:   p2pIntegration,
 		mutex:            sync.Mutex{},
-	}, nil
+	}
+
+	// Set up the farm score callback to connect p2p with the consensus engine
+	p2pIntegration.SetFarmScoreCallback(func(farmID string, score float64) {
+		validator.SubmitFarmScore(farmID, score)
+	})
+
+	return validator, nil
 }
 
 // IsRegistered checks if the validator is registered with the DXP contract
@@ -253,6 +287,23 @@ func (v *Validator) Start(ctx context.Context, blockPollingInterval int) error {
 	ctx, cancel := context.WithCancel(ctx)
 	v.cancel = cancel
 
+	// Start the p2p integration
+	log.Printf("Starting p2p gossip protocol for validator %s", v.nodeID)
+	if err := v.p2pIntegration.Start(ctx); err != nil {
+		return fmt.Errorf("failed to start p2p integration: %v", err)
+	}
+
+	// Discover peer validators from config
+	if v.config.PeerAddresses != nil && len(v.config.PeerAddresses) > 0 {
+		log.Printf("Discovering peer validators from config")
+		v.DiscoverPeers(v.config.PeerAddresses)
+	} else {
+		log.Printf("No peer addresses configured, running in standalone mode")
+	}
+
+	// Start farm data processing
+	go v.processFarmData(ctx)
+
 	// Start block processing
 	go v.processBlocks(ctx, blockPollingInterval)
 
@@ -276,6 +327,10 @@ func (v *Validator) Stop() {
 	if v.cancel != nil {
 		v.cancel()
 	}
+
+	// Stop the p2p integration
+	log.Printf("Stopping p2p gossip protocol for validator %s", v.nodeID)
+	v.p2pIntegration.Stop()
 
 	v.running = false
 }
@@ -437,6 +492,117 @@ func (v *Validator) submitResult(requestID *big.Int, result []byte, proof []byte
 
 	log.Printf("Submitted verification result, tx: %s", tx.Hash().Hex())
 	return nil
+}
+
+// SubmitFarmScore submits a farm score to the consensus engine
+func (v *Validator) SubmitFarmScore(farmID string, score float64) {
+	// Convert score to bytes for consensus engine
+	scoreBytes := []byte(fmt.Sprintf("%f", score))
+	
+	// Submit the score to the consensus engine
+	log.Printf("Submitting farm score for farm %s: %f", farmID, score)
+	v.consensusEngine.SubmitResult(farmID, v.nodeID, scoreBytes)
+	
+	// Check if consensus has been reached
+	consensusReached, consensusResult := v.consensusEngine.CheckConsensus(farmID)
+	if consensusReached {
+		log.Printf("Consensus reached for farm %s with score: %s", farmID, string(consensusResult))
+		
+		// Generate proof for the consensus result
+		proof, err := v.proofGenerator.GenerateProof(farmID, consensusResult)
+		if err != nil {
+			log.Printf("Error generating proof for farm score: %v", err)
+			return
+		}
+		
+		// Convert farm ID to big.Int for smart contract submission
+		farmIDInt := new(big.Int)
+		farmIDInt.SetString(farmID, 10)
+		
+		// Submit the result to the smart contract
+		err = v.submitResult(farmIDInt, consensusResult, proof)
+		if err != nil {
+			log.Printf("Error submitting farm score to smart contract: %v", err)
+			return
+		}
+		
+		log.Printf("Successfully submitted farm score to smart contract for farm %s", farmID)
+	} else {
+		log.Printf("Consensus not yet reached for farm %s", farmID)
+	}
+}
+
+// processFarmData continuously fetches farm data and calculates farm scores
+func (v *Validator) processFarmData(ctx context.Context) {
+	// Run farm data processing every 5 minutes
+	ticker := time.NewTicker(5 * time.Minute)
+	defer ticker.Stop()
+
+	// Process immediately on startup
+	v.fetchAndProcessFarmData(ctx)
+
+	for {
+		select {
+		case <-ctx.Done():
+			return
+		case <-ticker.C:
+			v.fetchAndProcessFarmData(ctx)
+		}
+	}
+}
+
+// fetchAndProcessFarmData fetches farm data and calculates scores
+func (v *Validator) fetchAndProcessFarmData(ctx context.Context) {
+	log.Printf("Fetching farm data from protocol master contract")
+	
+	// In a real implementation, we would fetch farm data from the protocol master contract
+	// For now, we'll use the farm data fetcher from the p2p integration
+	farmIDs, err := v.p2pIntegration.GetActiveFarmIDs()
+	if err != nil {
+		log.Printf("Error fetching active farm IDs: %v", err)
+		return
+	}
+	
+	log.Printf("Processing data for %d active farms", len(farmIDs))
+	
+	for _, farmID := range farmIDs {
+		// Fetch farm returns data
+		returns, err := v.p2pIntegration.GetFarmReturns(farmID)
+		if err != nil {
+			log.Printf("Error fetching returns for farm %s: %v", farmID, err)
+			continue
+		}
+		
+		// Calculate farm score using the Dexponent protocol formula
+		// FarmScore = 0.4(Sortino Ratio) + 0.4(Sharpe ratio) + 0.2(Maximum DrawDown) + 2(Returns)
+		score := v.p2pIntegration.CalculateFarmScore(returns)
+		
+		log.Printf("Calculated farm score for farm %s: %f", farmID, score)
+		
+		// Submit the farm score to our own consensus engine
+		v.SubmitFarmScore(farmID, score)
+		
+		// Broadcast the farm score to peer validators
+		v.p2pIntegration.BroadcastFarmScore(farmID, score)
+	}
+}
+
+// AddPeerValidator adds a peer validator to the p2p network
+func (v *Validator) AddPeerValidator(peerID, peerAddress string) {
+	log.Printf("Adding peer validator %s at address %s", peerID, peerAddress)
+	v.p2pIntegration.AddPeer(peerID, peerAddress)
+}
+
+// DiscoverPeers discovers peer validators from a list of known addresses
+func (v *Validator) DiscoverPeers(peerAddresses []string) {
+	log.Printf("Discovering peer validators from %d known addresses", len(peerAddresses))
+	
+	for _, addr := range peerAddresses {
+		// For simplicity, we'll use a placeholder peer ID format
+		// In a real implementation, we would query the peer for its actual ID
+		peerID := fmt.Sprintf("peer-%s", strings.Replace(addr, ":", "-", -1))
+		v.AddPeerValidator(peerID, addr)
+	}
 }
 
 // GetValidatorStatus returns the status of a validator node

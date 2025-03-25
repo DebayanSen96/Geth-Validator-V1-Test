@@ -21,9 +21,10 @@ var startCmd = &cobra.Command{
 		// Parse flags
 		blockPollingInterval, _ := cmd.Flags().GetInt("block-polling-interval")
 		detached, _ := cmd.Flags().GetBool("detached")
+		configPath, _ := cmd.Flags().GetString("config")
 
 		// Load configuration
-		cfg, err := config.LoadConfig()
+		cfg, err := config.LoadConfig(configPath)
 		if err != nil {
 			fmt.Printf("Error loading configuration: %v\n", err)
 			os.Exit(1)
@@ -36,23 +37,30 @@ var startCmd = &cobra.Command{
 			os.Exit(1)
 		}
 
-		// Check if validator is registered
-		isRegistered, err := validatorNode.IsRegistered()
-		if err != nil {
-			fmt.Printf("Error checking registration status: %v\n", err)
-			os.Exit(1)
-		}
-
-		if !isRegistered {
-			fmt.Println("Validator is not registered. Attempting to register...")
-			txHash, err := validatorNode.RegisterValidator()
+		// Check if we're in test mode (bypass registration)
+		testMode := os.Getenv("TEST_MODE") == "true"
+		
+		if !testMode {
+			// Check if validator is registered
+			isRegistered, err := validatorNode.IsRegistered()
 			if err != nil {
-				fmt.Printf("Error registering validator: %v\n", err)
+				fmt.Printf("Error checking registration status: %v\n", err)
 				os.Exit(1)
 			}
-			fmt.Printf("Validator registered successfully! TX: %s\n", txHash)
+
+			if !isRegistered {
+				fmt.Println("Validator is not registered. Attempting to register...")
+				txHash, err := validatorNode.RegisterValidator()
+				if err != nil {
+					fmt.Printf("Error registering validator: %v\n", err)
+					os.Exit(1)
+				}
+				fmt.Printf("Validator registered successfully! TX: %s\n", txHash)
+			} else {
+				fmt.Println("Validator is already registered with the DXP contract.")
+			}
 		} else {
-			fmt.Println("Validator is already registered with the DXP contract.")
+			fmt.Println("Running in TEST MODE - bypassing blockchain registration check")
 		}
 
 		// Create context with cancellation
@@ -87,4 +95,5 @@ func init() {
 	startCmd.Flags().Int("block-polling-interval", 10, "Interval in seconds to poll for new blocks")
 	startCmd.Flags().Bool("detached", false, "Run the validator in detached mode")
 	startCmd.Flags().String("log-file", "", "Log file to write validator logs to")
+	startCmd.Flags().String("config", "", "Path to configuration file")
 }
